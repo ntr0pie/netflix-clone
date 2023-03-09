@@ -1,4 +1,167 @@
-* {
-	margin: 0;
-	padding: 0;
+/* global */
+*, ::after, ::before {
+    box-sizing: inherit;
+    padding: 0px;
+    margin: 0px;
 }
+
+html{
+	box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    background-color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+/* main section */
+header{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    z-index: 4;
+    position: absolute;
+    width: 100%;
+    padding: 26px 56px;
+}
+
+#main header a.logo {
+    display: inline-block;
+}
+
+#main header a.logo svg {
+    fill: rgb(229, 9, 20);
+    height: 37px;
+}
+
+#main header div + div {
+    text-align: right;
+}
+
+#main header div.select-wrapper {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+#main header div.select-wrapper svg {
+    color: white;
+    height: 20px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 4px;
+}
+
+#main header select {
+    display: inline-block;
+    color: white;
+    background: transparent;
+    padding: 6px 0px 6px 20px;
+    border-radius: 3px;
+}
+
+#main header div a.button {
+    display: inline-block;
+    color: white;
+    background-color: rgb(229, 9, 20);
+    text-decoration: none;
+    padding: 6px 17px;
+    border-radius: 3px;
+}
+
+div.splash div.background {
+    position: relative;
+/*	height: 100vh;*/
+}
+
+div.splash div.background img {
+    max-width: 100%;
+    opacity: 0.6;
+}
+
+div.splash div.background div.gradient {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0px, transparent 60%, rgba(0, 0, 0, 0.8));
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+div.splash div.content {
+    text-align: center;
+    color: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inset: 0px;
+}
+
+div.splash h1, h2, h3 {
+    width: 750px;
+}
+
+div.splash h1 {
+    font-size: 3.125rem;
+}
+
+div.splash h2 {
+    font-size: 1.625rem;
+    font-weight: normal;
+    margin: 16px 0px;
+}
+
+div.splash h3 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin: 0px 0px 20px 0px;
+}
+
+div.splash form {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+}
+
+div.splash input {
+    height: 60px;
+    padding-left: 10px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: dimgrey;
+    border-image: initial;
+}
+
+div.splash input ~ span {
+    position: absolute;
+    color: rgb(170, 170, 170);
+    left: 0px;
+    top: 0px;
+    pointer-events: none;
+    margin: 20px 10px;
+    transition: all 0.15s ease 0s;
+}
+
+div.splash input:focus ~span{
+	margin: 5px 10px;
+	font-size: 0.8rem;
+}
+
+div.splash button {
+    height: 60px;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: normal;
+    background-color: rgb(229, 9, 20);
+    border-radius: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: dimgrey;
+    border-image: initial;
+    padding: 0px 26px;
+}
+/* main section ends here */
