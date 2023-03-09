@@ -165,3 +165,112 @@ div.splash button {
     padding: 0px 26px;
 }
 /* main section ends here */
+
+/* other section */
+/* all sections */
+section.features{
+	color: white;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 48px;
+	padding: 70px 35px;
+	border-bottom: 8px solid #222;
+	align-items: center;
+}
+
+section.features div.text h1{
+	font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+section.features div.text p{
+	font-size: 1.625rem;
+    font-weight: 400;
+}
+
+section.features div.media {
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-items: center;
+}
+
+section.features div.media img{
+/*	z-index: 4;*/
+}
+
+section.features:nth-child(even) .text{
+	order: 2;
+}
+
+section.features:nth-of-type(1) div.media video.media-video{
+	position: absolute;
+	inset: 0;
+	width: 293px;
+	top: 62px;
+	left: 109px;
+	z-index: -1;
+}
+
+/* section 1 */
+section.features:nth-of-type(1){
+	border-top: 8px solid #222;
+}
+
+section.features:nth-of-type(1) div.media img.tv{
+	width: 400px;
+}
+
+/* section 2 */
+section.features:nth-of-type(2) div.download-tile{
+	border: 2px solid #666;
+	border-radius: 10px;
+	padding: 8px 12px;
+	background-color: black;
+	z-index: 5;
+	display: grid;
+	grid-template-columns: max-content 1fr max-content;
+	align-items: center;
+	justify-items: center;
+	position: absolute;
+	width: 320px;
+	height: 95px;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -160px;
+	gap: 20px;
+}
+
+section.features:nth-of-type(2) div.media img{
+	width: 500px;
+}
+
+section.features:nth-of-type(2) div.download-tile img{
+	height: 75px; /* height of div - 2*padding */
+	width: auto;
+}
+
+section.features:nth-of-type(2) div.download-tile div p+p{
+	color: #0071eb;
+}
+
+/* section 3 */
+section.features:nth-of-type(3) div.media img.tv{
+	width: 500px;
+}
+
+section.features:nth-of-type(3) div.media video.media-video{
+	position: absolute;
+	top: 26px;
+	left: 103px;
+	z-index: -1;
+	width: 305px;
+}
+
+/* section 4 */
+section.features:nth-of-type(4) img{
+	width: 500px;
+}
+
+
